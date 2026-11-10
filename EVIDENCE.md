@@ -21,4 +21,4 @@ The report corpus uses three seeded profiles for each combination of1..4 items a
 
 The Python and browser tests also cover ties, zero values, single-good second price, one-bidder zero externality, menu independence from own report, utility/revenue conservation, scaled values, bidder/item relabeling, strict schema, malformed JSON, booleans/floats, duplicate keys, CLI input bounds and independent verifier imports. Browser download checks include a transport-completion wait and a1.1s inter-download pause; no inference assertion is retried.
 
-Run the commands in README to reproduce. Public native source, CI, Pages and all portfolio showcase checks remain pending in this local snapshot.
+Run the commands in README to reproduce. Native source, CI, deployed assets and portfolio showcases require separate commit-specific publication checks. These local counts alone do not establish deployment status.
