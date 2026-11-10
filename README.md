@@ -70,8 +70,8 @@ The 16 controls are developed teaching fixtures, not held-out data. Finite selec
 
 All efficient ties are retained. Truthful utilities and seller revenue are tie-invariant; bidder payment vectors may differ. See [MODEL.md](MODEL.md) for definitions and derivations, [EVIDENCE.md](EVIDENCE.md) for measured checks and [SOURCES.md](SOURCES.md) for provenance.
 
-## Status
+## Publication checks
 
-Local implementation and reproduction checks complete. Public source, CI, deployment and portfolio showcase gates are pending. No live demo availability is claimed in this snapshot.
+Reproduction results describe bounded checks, not a claim about the latest deployment. Inspect the current commit and its [native workflow results](https://github.com/midya8/auctionlab/actions) before relying on publication status. The implementation does not interact with actual auctions or payments.
 
 MIT licensed. Established mechanism theory is credited separately; no first-implementation or new-theorem claim.
