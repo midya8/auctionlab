@@ -4,7 +4,7 @@ Let N be bidders and G be items. A feasible allocation assigns each item to a bi
 
 ## Allocation and pivot prices
 
-W(S) is maximum sum of reported values over allocations using only bidders S. The complete certificate includes every maximizing ownership ID for every subset S, not just the first optimum. IDs are lexicographic base-(n+1) owner vectors, with owner0 seller and owner(i+1) bidder i.
+W(S) is maximum sum of reported values over allocations using only bidders S. The complete certificate includes every maximizing ownership ID for every subset S, not just the first optimum. IDs are lexicographic base-(n+1) owner vectors, with owner 0 for the seller and owner (i+1) for bidder i.
 
 For every efficient allocation x, bidder i pays:
 
@@ -20,7 +20,7 @@ For every T, `v_i(T)+H_i(G\T)<=W(N)`. Thus `v_i(T)-q_i(T)<=u_i`. Equality holds 
 
 ## Seller-inclusive cooperative core
 
-A coalition with the seller and bidders S has value W(S). Its current total payoff is `R+sum_{i in S}u_i`. Slack is payoff minus value. Deficit is max(0,-slack). The certificate reports every S, every deficit and every blocking subset. The full coalition has slack0 by conservation. Coalitions without the seller own no goods, have value0 and cannot block the nonnegative truthful bidder utilities. This statement relies on the zero-reserve seller-ownership model.
+A coalition with the seller and bidders S has value W(S). Its current total payoff is `R+sum_{i in S}u_i`. Slack is payoff minus value. Deficit is max(0,-slack). The certificate reports every S, every deficit and every blocking subset. The full coalition has slack 0 by conservation. Coalitions without the seller own no goods, have value 0 and cannot block the nonnegative truthful bidder utilities. This statement relies on the zero-reserve seller-ownership model.
 
 A positive deficit is a cooperative transferable-utility blocking witness. It does not supply an actual bidding strategy, equilibrium, self-enforcing coalition, budget-feasible deviation or collusion plan. Core auditing is not core-selecting payment design.
 
@@ -34,4 +34,4 @@ Python generation enumerates ownership vectors. The independently implemented ve
 
 JavaScript generation/replay changes census representation but shares evidence construction. Cross-language complete-report equality supplements the independent Python replay. Optional HiGHS binary bundle solves cross-check every coalition and menu welfare subproblem, with explicit integer and item-feasibility checks, not just solver success.
 
-Certificates are not cryptographic signatures or formal proofs. Exhaustive enumeration is bounded at256 ownership allocations; independently replaying small finite evidence is not a claim to solve large winner-determination problems.
+Certificates are not cryptographic signatures or formal proofs. Exhaustive enumeration is bounded at 256 ownership allocations; independently replaying small finite evidence is not a claim to solve large winner-determination problems.

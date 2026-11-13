@@ -1,10 +1,18 @@
 # AuctionLab
 
-**Truthful alone. Not protected together.**
+AuctionLab enumerates combinatorial allocations, Vickrey-Clarke-Groves (VCG) prices, report-independent bundle menus and seller-coalition core deficits. Synthetic private values, no actual auctions or money.
 
-An exact finite laboratory for multiagent combinatorial allocation, Vickrey-Clarke-Groves (VCG) prices, report-independent bundle menus and seller-coalition core deficits. Synthetic private values, no actual auctions or money.
+## Questions the report separates
 
-## The developed teaching contrast
+- Which allocations maximize reported welfare, including every tie?
+- What externality does each winner pay, and what utility does truthful reporting attain?
+- Can a seller-inclusive coalition generate more value than its current combined payoff?
+- What happens under each explicitly supplied unilateral report?
+
+A coalition deficit is a transferable-utility witness, not a collusion plan.
+Checking selected reports is also not a proof over every possible valuation.
+
+## Bundle-versus-singletons control
 
 Two items, three bidders. Values are indexed by bundle bitmask: empty, A, B, AB.
 
@@ -20,7 +28,7 @@ The seller together with B1 can generate **10**, yet their current combined payo
 
 Change B1's row to `[0,5,5,10]`: welfare stays 12, revenue becomes 10 and the deficit disappears in this control. This numerical contrast is not a theorem about all complement/substitute valuation classes.
 
-## Inspectable evidence
+## Certificate contents
 
 - Every feasible ownership vector, with seller-retained goods allowed.
 - Every welfare-maximizing tie, without outcome cherry-picking.
@@ -70,7 +78,7 @@ The 16 controls are developed teaching fixtures, not held-out data. Finite selec
 
 All efficient ties are retained. Truthful utilities and seller revenue are tie-invariant; bidder payment vectors may differ. See [MODEL.md](MODEL.md) for definitions and derivations, [EVIDENCE.md](EVIDENCE.md) for measured checks and [SOURCES.md](SOURCES.md) for provenance.
 
-## Publication checks
+## Publication status
 
 Reproduction results describe bounded checks, not a claim about the latest deployment. Inspect the current commit and its [native workflow results](https://github.com/midya8/auctionlab/actions) before relying on publication status. The implementation does not interact with actual auctions or payments.
 
